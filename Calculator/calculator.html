@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="Heading">
+                <h1>Calculator</h1>
+            </div>
+
+            <div class="calculator">
+                <div>
+                    <input type="text" class="display" readonly />
+                </div>
+
+                <div class="button-container equal">
+                    <button onclick="calculateResult()">=</button>
+                </div>
+                <div class="button-container">
+                    <button onclick="currentVal += '-'; onDisplay()">−</button>
+                    <button onclick="currentVal += '.'; onDisplay()">.</button>
+                    <button onclick="currentVal += '1'; onDisplay()">1</button>
+                    <button onclick="currentVal += '2'; onDisplay()">2</button>
+                </div>
+                <div class="button-container">
+                    <button onclick="currentVal += '+'; onDisplay()">+</button>
+                    <button onclick="currentVal += '3'; onDisplay()">3</button>
+                    <button onclick="currentVal += '4'; onDisplay()">4</button>
+                    <button onclick="currentVal += '5'; onDisplay()">5</button>
+                </div>
+                <div class="button-container">
+                    <button onclick="currentVal += '*'; onDisplay()">x</button>
+                    <button onclick="currentVal += '6'; onDisplay()">6</button>
+                    <button onclick="currentVal += '7'; onDisplay()">7</button>
+                    <button onclick="currentVal += '8'; onDisplay()">8</button>
+                </div>
+                <div class="button-container">
+                    <button onclick="currentVal += '/'; onDisplay()">/</button>
+                    <button onclick="currentVal += '9'; onDisplay()">9</button>
+                    <button onclick="currentVal += '0'; onDisplay()">0</button>
+                    <button class="clear" onclick="currentVal = ''; onDisplay()">CLEAR</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="calculator.js">
+
+    </script>
+</body>
+</html>
